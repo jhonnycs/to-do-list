@@ -1,0 +1,171 @@
+:root {
+    --lilás: #af7eeb;
+    --cinzaClaro: #e3eafb;
+    --quaseBranco: #fbfbfb;
+    --cor4: #bbc1d5;
+    /* --cinzaEscuro: #abb4cc; */
+    --cinzaEscuro: #7d8497;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cinzaClaro);
+}
+
+#container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+header {
+    margin: 0px 0px 10px 0px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--lilás);
+    color: var(--quaseBranco);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--quaseBranco);
+}
+
+/* ul {
+    
+    padding: 30px 10px 0px 10px;
+    background-color: var(--quaseBranco);
+} */
+
+.listContainer {
+    list-style: circle inside;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-around;
+    padding: 30px 10px 0px 10px;
+    width: 370px;
+}
+
+li {
+
+    color: var(--cinzaEscuro);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+
+}
+
+/*
+    Checkbox personalizado
+    https://www.w3schools.com/howto/howto_css_custom_checkbox.asp
+*/
+/* 
+.label {
+    padding: 20px 10px 0px 10px;
+    background-color: var(--quaseBranco);
+    color: var(--cinzaEscuro);
+    font-size: 1.2em;
+    cursor: pointer;
+    display: block;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    transform: translateX(-112px);
+    height: 19px;
+    width: 19px;
+    border-radius: 50%;
+    background-color: var(--cor4);
+   
+}
+
+.label:hover input ~ .checkmark {
+    background-color: var(--cinzaEscuro);
+}
+
+.label input:checked ~ .checkmark {
+    background-color: var(--lilás);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.label input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+.label .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}  */
+
+#addTask{
+    border: 1px solid var(--cinzaEscuro);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 30px 0px 0px 0px;
+}
+
+button {
+    font-size: 1.2em;
+    border-radius: 20px;
+    padding: 5px 20px;
+    border: none;
+    background-color: var(--lilás);
+    color: var(--quaseBranco);
+    white-space: nowrap;
+    transform: translateY(15px);
+    cursor: pointer;
+}
