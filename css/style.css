@@ -193,3 +193,9 @@ button:hover {
     background-color: var(--lilásEsc);
     transition: .3s;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        height: 85vh;
+    }
+}
